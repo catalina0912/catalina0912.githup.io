@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Applet Page</title>
+    <title>Interactive Applet</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="applet.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Applet Example</h1>
+        <h1>Interactive Applet Example</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -20,11 +21,10 @@
     </header>
     <main>
         <section>
-            <h2>Java Applet</h2>
-            <p>Note: A small computer application that performs one particular task, especially a small program written in the Java™ computer language that is included in a website</p>
-            <applet code="ExampleApplet.class" width="300" height="300">
-                Your browser does not support Java, so this applet will not work for you. (Definitia am luat-o din dincrionar sper sa fie bine :))  )
-            </applet>
+            <h2>Simple Interactive Applet</h2>
+            <p>Click the button to change the color of the box:</p>
+            <button id="colorButton">Change Color</button>
+            <div id="colorBox" class="color-box"></div>
         </section>
     </main>
     <footer>
@@ -32,3 +32,4 @@
     </footer>
 </body>
 </html>
+
